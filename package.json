@@ -27,6 +27,8 @@
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
-    "electron": "26.2.0"
+    "electron": "26.2.0",
+    "fastify": "^4.22.2",
+    "shelljs": "^0.8.5"
   }
 }

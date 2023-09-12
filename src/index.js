@@ -23,7 +23,9 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools()
 
   // start the better-sync server
-  require("./server/app.js")
+  const { server } = require("./server/app.js")
+  server.setWindow(mainWindow)
+  server.start()
 }
 
 // This method will be called when Electron has finished

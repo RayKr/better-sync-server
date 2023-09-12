@@ -45,10 +45,16 @@ app.post("/api/v1/ql", async (request, reply) => {
   return { code: 200, message: "Quicklook succeed." }
 })
 
-app.listen({ port: 12138 }, (err, address) => {
-  if (err) throw err
-  // Server is now listening on ${address}
-})
+app.setWindow = (window) => {
+  app.window = window
+}
+
+app.start = (port = 12138) => {
+  app.listen({ port: port }, (err, address) => {
+    if (err) throw err
+    // Server is now listening on ${address}
+  })
+}
 
 module.exports = {
   server: app,

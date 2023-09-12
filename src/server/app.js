@@ -1,6 +1,6 @@
 // CJS
 const Fastify = require("fastify")
-const BetterSyncHandler = require("./sync.js")
+const { BetterSyncHandler } = require("./sync.js")
 const { Quicklook } = require("./tool.js")
 
 const app = Fastify({

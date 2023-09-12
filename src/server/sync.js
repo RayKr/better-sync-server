@@ -164,3 +164,7 @@ function _getSameInodeFiles(dir, file) {
   files.pop()
   return files
 }
+
+module.exports = {
+  BetterSyncHandler,
+}
